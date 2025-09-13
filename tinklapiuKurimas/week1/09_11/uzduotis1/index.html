@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .gaps {
+      margin-bottom: 15px;
+    }
+  </style>
+  <body>
+    <p style="margin: 0">Title</p>
+    <form>
+      <div>
+        <input type="radio" id="mr" name="title" value="Mr" />
+        <label for="mr">Mr</label>
+        <input type="radio" id="mrs" name="title" value="Mrs" />
+        <label for="mrs">Mrs</label>
+        <input type="radio" id="miss" name="title" value="Miss" />
+        <label for="miss">Miss</label>
+      </div>
+      <br />
+      <label for="fname">First name</label><br />
+      <input type="text" id="fname" name="fname" class="gaps" /> <br />
+      <label for="lname">Last name</label><br />
+      <input type="text" id="lname" name="lname" class="gaps" /> <br />
+      <label for="email">Email</label> <br />
+      <input type="text" id="email" name="email" class="gaps" /> <br />
+      <label for="phoneNumber">Phone number</label><br />
+      <input
+        type="text"
+        name="phoneNumber"
+        id="phoneNumber"
+        class="gaps"
+      /><br />
+      <label for="password">Password</label><br />
+      <input type="text" name="password" id="password" class="gaps" /><br />
+      <label for="country">Country</label><br />
+      <select name="countries" id="countries" class="gaps">
+        <option value="china">China</option>
+        <option value="lithuania">Lithuania</option>
+        <option value="uk">United Kingdom</option>
+        <option value="spain">Spain</option></select
+      ><br />
+      <div class="gaps">
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms"
+          >I agree to the <a href="#">terms and conditions</a></label
+        >
+      </div>
+      <button type="submit">Sign up</button>
+      <button type="submit">Reset form</button>
+    </form>
+  </body>
+</html>
