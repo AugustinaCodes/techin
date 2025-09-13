@@ -1,102 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="mainTable">
-        <div class="tableTop">
-            <h3 style="margin: 0; padding: 8px;">Team Members</h3>
-            <h4 class="membersCell">(7) Members</h4>
-    
-        </div>
-        <div class="line"></div>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Status</th>
-                <th>Email address</th>
-                <th>Tags</th>
-            </tr>
-            <tr>
-                <td class="nameInfoCell">
-                    <img src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787" alt="Dog">
-                    <div>
-                        <p class="nameBold">James Alexander</p>
-                        <p>@james</p>
-                    </div>
-                </td>
-                <td class="greenPill">active</td>
-                <td>james@example.com</td>
-                <td class="tagsInfoCell">
-                    <p>Dev</p>
-                    <p>QA</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="nameInfoCell">
-                    <img src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787" alt="Dog">
-                    <div>
-                        <p class="nameBold">Lilia Taylor</p>
-                        <p>@lilia</p>
-                    </div>
-                </td>
-                <td class="greenPill">active</td>
-                <td>lilia.taylor@example.com</td>
-                <td class="tagsInfoCell">
-                    <p>Design</p>
-                    <p>Marketing</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="nameInfoCell">
-                    <img src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787" alt="Dog">
-                    <div>
-                        <p class="nameBold">Drew Cano</p>
-                        <p>@drew</p>
-                    </div>
-                </td>
-                <td>Inactive</td>
-                <td>drew.crano@example.com</td>
-                <td class="tagsInfoCell">
-                    <p>Design</p>
-                    <p>Marketing</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="nameInfoCell">
-                    <img src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787" alt="Dog">
-                    <div>
-                        <p class="nameBold">Nate Conor</p>
-                        <p>@nate</p>
-                    </div>
-                </td>
-                <td>offline</td>
-                <td>nate@example.com</td>
-                <td class="tagsInfoCell">
-                    <p>Dev</p>
-                </td>
-            </tr>
-             <tr>
-                <td class="nameInfoCell">
-                    <img src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787" alt="Dog">
-                    <div>
-                        <p class="nameBold">Melissa Brantley</p>
-                        <p>@melissa</p>
-                    </div>
-                </td>
-                <td class="greenPill">active</td>
-                <td>melissa@example.com</td>
-                <td class="tagsInfoCell">
-                    <p>Marketing</p>
-                </td>
-            </tr>
-        </table>
-
+      <div class="tableTop">
+        <h3 style="margin: 0; padding: 8px">Team Members</h3>
+        <h4 class="membersCell">(7) Members</h4>
+      </div>
+      <div class="line"></div>
+      <table style="border-collapse: collapse">
+        <tr class="headingRow">
+          <th style="width: 100px">Name</th>
+          <th style="width: 100px">Status</th>
+          <th style="width: 300px">Email address</th>
+          <th style="width: 400px">Tags</th>
+        </tr>
+        <tr style="background-color: #f7f8fb">
+          <td>
+            <div class="nameInfoCell">
+              <img
+                src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787"
+                alt="Dog"
+              />
+              <div>
+                <p class="nameBold">James Alexander</p>
+                <p>@james</p>
+              </div>
+            </div>
+          </td>
+          <td><p class="greenPill pill">active</p></td>
+          <td>james@example.com</td>
+          <td>
+            <div class="tagsInfoCell">
+              <p class="bluePill pill">Dev</p>
+              <p class="redPill pill">QA</p>
+            </div>
+          </td>
+        </tr>
+        <tr style="background-color: #e1ecfd">
+          <td>
+            <div class="nameInfoCell">
+              <img
+                src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787"
+                alt="Dog"
+              />
+              <div>
+                <p class="nameBold">Lilia Taylor</p>
+                <p>@lilia</p>
+              </div>
+            </div>
+          </td>
+          <td><p class="greenPill pill">active</p></td>
+          <td>lilia.taylor@example.com</td>
+          <td>
+            <div class="tagsInfoCell">
+              <p class="purplePill pill">Design</p>
+              <p class="orangePill pill">Marketing</p>
+            </div>
+          </td>
+        </tr>
+        <tr style="background-color: #f5f8fb">
+          <td>
+            <div class="nameInfoCell">
+              <img
+                src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787"
+                alt="Dog"
+              />
+              <div>
+                <p class="nameBold">Drew Cano</p>
+                <p>@drew</p>
+              </div>
+            </div>
+          </td>
+          <td><p class="orangePill pill">inactive</p></td>
+          <td>drew.crano@example.com</td>
+          <td>
+            <div class="tagsInfoCell">
+              <p class="purplePill pill">Design</p>
+              <p class="orangePill pill">Marketing</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="nameInfoCell">
+              <img
+                src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787"
+                alt="Dog"
+              />
+              <div>
+                <p class="nameBold">Nate Conor</p>
+                <p>@nate</p>
+              </div>
+            </div>
+          </td>
+          <td><p class="greyPill pill">offline</p></td>
+          <td>nate@example.com</td>
+          <td>
+            <div class="tagsInfoCell">
+              <p class="bluePill pill">Dev</p>
+            </div>
+          </td>
+        </tr>
+        <tr style="background-color: #f5f8fb">
+          <td>
+            <div class="nameInfoCell">
+              <img
+                src="https://www.lillybrush.com/cdn/shop/articles/shutterstock_362541863-1024x633.jpg?v=1677012787"
+                alt="Dog"
+              />
+              <div>
+                <p class="nameBold">Melissa Brantley</p>
+                <p>@melissa</p>
+              </div>
+            </div>
+          </td>
+          <td><p class="greenPill pill">active</p></td>
+          <td>melissa@example.com</td>
+          <td>
+            <div class="tagsInfoCell">
+              <p class="orangePill pill">Marketing</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="pages">
+        <p class="selectedPage">1</p>
+        <p>2</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

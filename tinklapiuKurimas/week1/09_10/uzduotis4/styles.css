@@ -13,10 +13,26 @@ body {
   padding: 20px;
 }
 
+td {
+  padding-left: 20px;
+  height: 80px;
+}
+
 .mainTable {
   border-radius: 20px;
   background-color: white;
   padding: 20px 20px;
+  width: 1100px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.headingRow {
+  text-align: left;
+}
+
+.headingRow th {
+  padding: 20px;
+  color: #aba8ac;
 }
 
 .tableTop {
@@ -25,33 +41,85 @@ body {
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    background-color: lightgray;
-    margin: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: lightgray;
+  margin: 10px;
 }
 
-
 .membersCell {
-    background-color: #f4f3f4;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 0;
+  background-color: #f4f3f4;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 0;
 }
 
 .nameInfoCell {
   display: flex;
+  align-items: center;
+  padding-top: 15px;
+  gap: 15px;
   width: 300px;
 }
 
 .nameBold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .tagsInfoCell {
   display: flex;
+  gap: 10px;
+}
+
+.pill {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .greenPill {
-  color: green;
+  color: #6ecd95;
+  background-color: #e9fdf1;
+}
+
+.orangePill {
+  color: #e4c57b;
+  background-color: #fcf6e2;
+}
+
+.greyPill {
+  color: #aba8ac;
+  background-color: #f3f1f1;
+}
+
+.bluePill {
+  color: #92aece;
+  background-color: #eaf2fc;
+}
+
+.redPill {
+  color: #dc9daf;
+  background-color: #fbdde7;
+}
+
+.purplePill {
+  color: #9f92cc;
+  background-color: #f4effd;
+}
+
+.pages {
+  display: flex;
+  font-weight: bold;
+  gap: 30px;
+  font-size: 20px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.selectedPage {
+  background-color: #f5f8fb;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: underline;
 }
