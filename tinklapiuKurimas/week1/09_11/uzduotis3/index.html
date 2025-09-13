@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Exercise</h1>
+    <form>
+      <label for="textInput">Text input</label><br />
+      <input
+        type="text"
+        name="textInput"
+        id="textInput"
+        placeholder="Enter text..."
+      /><br />
+      <label for="passworInput">Password input</label><br />
+      <input type="password" name="passworInput" id="passworInput" /> <br />
+      <label for="emailInput">E-mail input</label><br />
+      <input type="email" name="emailInput" id="emailInput" /><br />
+      <label for="urlInput">URL input</label><br />
+      <input type="url" name="urlInput" id="urlInput" /><br />
+      <label for="searchInput">Search Input</label><br />
+      <input type="search" name="searchInput" id="searchInput" /><br />
+      <label for="requiredInput">Required input</label><br />
+      <input type="text" name="requiredInput" id="requiredInput" required />
+      <br />
+      <label for="readOnly">Read-only input</label> <br />
+      <input
+        type="text"
+        name="readOnly"
+        id="readOnly"
+        placeholder="Readonly text"
+        readonly
+      />
+      <br />
+      <label for="disabledInput">Disabled input</label><br />
+      <input
+        type="text"
+        name="disabledInput"
+        id="disabledInput"
+        disabled
+      /><br />
+      <label for="singleSelect">Single-select</label> <br />
+      <select name="options" id="options">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      <br />
+      <label for="multipleSelect">Multiple-select</label><br />
+      <select name="multiple" id="multiple" multiple>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option></select
+      ><br />
+      <label for="checkbox">Checkbox</label><br />
+      <input type="checkbox" name="checkbox" id="checkbox" value="checkMe" />
+      <label for="checkbox">Check me</label> <br />
+      <label for="checkboxes">Checkboxes</label> <br />
+      <input type="checkbox" name="optionA" id="optionA" value="optionA" />
+      <label for="optionA">Option A</label><br />
+      <input type="checkbox" name="optionB" id="optionB" value="optionB" />
+      <label for="optionB">Option B</label><br />
+      <input type="checkbox" name="optionC" id="optionC" value="optionC" />
+      <label for="optionC">Option C</label><br />
+      <label for="radioButtons">Radio buttons</label><br />
+      <input type="radio" name="options" id="optionAA" />
+      <label for="optionAA">Option A</label><br />
+      <input type="radio" name="options" id="optionBB" />
+      <label for="optionBB">Option B</label><br />
+      <input type="radio" name="options" id="optionCC" />
+      <label for="optionCC">Option C</label><br />
+      <label for="fileInput">File input</label><br />
+      <input type="file" name="fileInput" id="fileInput" /><br />
+      <label for="textarea">Textarea</label><br />
+      <textarea name="textarea" id="text"></textarea><br />
+      <label for="date">Date</label><br />
+      <input type="date" name="date" id="date" /> <br />
+      <label for="numberInput">Number input</label><br />
+      <input type="number" placeholder="0" /> <br />
+      <label for="range">Range input</label><br />
+      <input type="range" name="" id="" /><br />
+      <button type="submit">Save</button>
+      <button type="submit">Cancel</button>
+    </form>
+  </body>
+</html>
