@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .gaps {
+      margin: 15px 0 15px 0;
+    }
+  </style>
+  <body>
+    <h1>Uzpildykite forma:</h1>
+    <h4>Visi laukai privalomi.</h4>
+    <form>
+      <label for="vardas">Vardas (is didziosios raides):</label> <br />
+      <input
+        type="text"
+        id="vardas"
+        name="vardas"
+        placeholder="Vardas"
+        class="gaps"
+      />
+      <br />
+      <label for="phoneNumber">Jusu telefono numeris:</label> <br />
+      <input
+        type="text"
+        name="phoneNumber"
+        id="phoneNumber"
+        placeholder="+370-xxx-xxxxx"
+        class="gaps"
+      />
+      <br />
+      <label for="email">El. pasto adresas:</label><br />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="el.p.adresas"
+        class="gaps"
+      /><br />
+      <label for="favURL">
+        Jusu megstamiausios internetines svetaines adresas:</label
+      ><br />
+      <input
+        type="text"
+        name="favURL"
+        id="favURL"
+        placeholder="url adresas"
+        class="gaps"
+      /><br />
+      <label for="dob">Jusu gimimo data:</label> <br />
+      <input type="date" name="dob" id="dob" class="gaps" /><br />
+      <label for="year">Jusu amzius (18-65):</label><br />
+      <input
+        type="number"
+        name="year"
+        id="year"
+        min="18"
+        max="65"
+        class="gaps"
+        placeholder="nuo 18 iki 65 metu"
+        style="width: 150px"
+      />
+      <br />
+      <label for="postCode">Jusu pasto kodas:</label> <br />
+      <input
+        type="text"
+        name="postCode"
+        id="postCode"
+        placeholder="XX-01234"
+        class="gaps"
+      />
+      <br />
+      <label for="color">Jusu megstamiausia spalva:</label><br />
+      <input
+        type="color"
+        name="color"
+        id="color"
+        value="#000000"
+        style="margin-top: 15px; width: 60px"
+      />
+      <br />
+      <button type="submit" style="margin-top: 5px">Pateikti</button>
+    </form>
+  </body>
+</html>
