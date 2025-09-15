@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	padding: 1em;
+}
+
+header nav li{
+	display: inline-block;
+	padding: 1em;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article{
+	flex-basis: 50%;
+	flex-grow: 1;
+	margin-top: 1em;
+}
+
+article figure{
+	float: left;
+	margin-right: 1em;
+}
+
+aside nav li{
+	padding: 1em;
+	display: inline-block;
+}
+
+aside{
+	margin-top: 1em;
+}
+
+/* My added CSS */
+
+h1, footer {
+    background-color: #333333;
+    color: white;
+}
+
+h1 span {
+    color: #ffa500;
+}
+
+header nav, aside section h4 {
+    background-color: #666666;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main h3 {
+    text-transform: uppercase;
+}
+
+main article a {
+    color: #ffa500;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section h4 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 35px;
+}
+
+aside section nav {
+    text-align: center;
+}
+aside section nav a {
+    color: #ffa500;
+    text-decoration: none;
+}
