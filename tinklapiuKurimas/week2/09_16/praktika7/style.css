@@ -1,0 +1,11 @@
+ul li {
+  list-style: none;
+}
+
+li a[href*="cv"]:before {
+  content: "♛ ";
+}
+
+li a[href*="darb"]:before {
+  content: "♞";
+}

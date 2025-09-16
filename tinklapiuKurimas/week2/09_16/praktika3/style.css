@@ -1,0 +1,26 @@
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 200px;
+  height: 40px;
+}
+
+thead tr,
+tfoot tr {
+  background-color: greenyellow;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:hover,
+tbody tr:hover {
+  background-color: aqua;
+}
