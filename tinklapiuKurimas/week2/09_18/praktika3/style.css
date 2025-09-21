@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-top: 100px;
+  box-shadow: 10px 10px 10px rgb(160, 160, 160),
+    -10px -10px 10px rgb(160, 160, 160);
+  padding: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+}
+
+div .icons {
+  color: goldenrod;
+  margin: 20px;
+  letter-spacing: 20px;
+}
+
+.card p:nth-child(2) {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.card p:nth-child(3) {
+  text-align: center;
+  text-indent: 20px;
+}
