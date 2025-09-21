@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  background-color: dodgerblue;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: left;
+  border: 1px solid dodgerblue;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.textInside {
+  border: 1px solid dodgerblue;
+  padding: 20px 10px;
+}
+
+p:nth-child(1) {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+li span {
+  font-weight: bold;
+}
