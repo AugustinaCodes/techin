@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(https://media.istockphoto.com/id/2019771891/vector/cloud-set-icon-weather-symbol-clipart-stencil-vector-stock-illustration-eps-10.jpg?s=612x612&w=0&k=20&c=4FN3vt-pEvTIYqsIkP5zR-3nmhGS-JqDLOpdwojSNrM=);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv {
+  background-color: palevioletred;
+  border-radius: 10px;
+  height: 600px;
+  width: 500px;
+  padding: 20px;
+}
+
+.border,
+.border2 {
+  border: 1px solid aquamarine;
+  padding: 5px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.border2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.border2 p {
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+i {
+  font-size: 150px;
+  margin: 40px;
+}
+
+.para {
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 20px;
+  word-spacing: 5px;
+  letter-spacing: normal;
+}
+hr {
+  width: 100%;
+  margin-top: 20px;
+}
