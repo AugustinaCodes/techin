@@ -32,14 +32,19 @@
 
 .svogunas {
   width: 60%;
-  height: 23px;
   background-color: #a039bf;
+  border-bottom: 25px dotted palevioletred;
 }
 
 .mesaDisplay {
   display: flex;
   gap: 5px;
 }
+
+/* arba jeigu html nekeisti tai mesa viduje uzdeti:  
+display: inline-block
+text-align: center
+*/
 
 .mesa {
   background-color: #74380e;
