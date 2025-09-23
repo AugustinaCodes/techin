@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outside {
+  background-color: lightgray;
+  width: 400px;
+  height: 500px;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.topBlue {
+  background-color: rgb(85, 85, 236);
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.bottomCard {
+  background-color: white;
+  height: 290px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 25px;
+  padding: 5px;
+}
+
+p:first-child {
+  font-size: 15px;
+}
+
+.socialMedia {
+  margin: 10px 0;
+}
+
+.socialMedia i {
+  font-size: 30px;
+  margin: 0 5px;
+}
