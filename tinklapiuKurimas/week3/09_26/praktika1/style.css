@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.blue-section {
+  background-color: rgb(5, 5, 138);
+  text-align: center;
+  color: white;
+  height: 100px;
+  line-height: 100px;
+}
+
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-purple,
+.box-pink,
+.box-orange,
+.box-gray {
+  width: 200px;
+  height: 200px;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+.box-pink {
+  background-color: palevioletred;
+}
+
+.box-purple {
+  background-color: blueviolet;
+}
+
+.box-orange {
+  background-color: orange;
+}
+
+.box-gray {
+  background-color: lightgray;
+}
