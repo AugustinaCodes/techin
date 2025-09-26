@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --button-color: rgb(106, 139, 6);
+}
+
+img {
+  width: 250px;
+}
+
+/* Header Styling */
+/* Navigation and Hero Section */
+
+header {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5e8ee22524984c387cdaed27/f4ec0ded-9ff4-406e-8dd1-5f0fe74e48bf/Denali%2C+Alaska.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  color: white;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 420px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: none;
+  }
+}
+
+/* Mobile - END */
+
+nav {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.hero-content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-content button {
+  background-color: var(--button-color);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0.9;
+  border: none;
+}
