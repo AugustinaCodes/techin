@@ -21,7 +21,7 @@ body {
 
 .topBlue {
   background-color: rgb(85, 85, 236);
-  height: 150px;
+  height: 130px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -51,4 +51,58 @@ p:first-child {
 .socialMedia i {
   font-size: 30px;
   margin: 0 5px;
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-square-twitter {
+  color: aqua;
+}
+
+.fa-square-instagram {
+  color: pink;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+button {
+  color: white;
+  background-color: rgb(85, 85, 236);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin: 5px;
+}
+
+.engagement,
+.heart,
+.convo,
+.share {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.line {
+  background-color: lightgray;
+  width: 2px;
+}
+
+img {
+  border-radius: 50%;
+  width: 110px;
+  border: 3px solid white;
+}
+
+.innerBorder {
+  border-radius: 50%;
+  width: 116px;
+  position: relative;
+  left: 120px;
+  top: 60px;
+  border: 3px solid rgb(85, 85, 236);
 }
