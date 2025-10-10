@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+.practice-one {
   display: grid;
   grid-template-columns: repeat(3, 220px);
   grid-template-rows: repeat(2, 170px);
@@ -18,4 +18,25 @@ div {
   font-size: 2rem;
   padding-left: 25px;
   justify-self: center;
+}
+
+.practice-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(2, 170px);
+}
+
+.practice-2 div:nth-child(4) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.practice-2 div:nth-child(6) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.practice-2 div:nth-child(5) {
+  grid-column: 1;
+  grid-row: 2;
 }
