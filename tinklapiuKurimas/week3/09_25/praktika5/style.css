@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  position: relative;
+}
+
+img {
+  width: 400px;
+  position: absolute;
+  top: 180px;
+}
+
+.inner-section div {
+  height: 2px;
+  width: 80px;
+  background-color: lightgray;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  height: 400px;
+  width: 500px;
+  box-shadow: 5px 5px 5px rgb(166, 165, 165), -5px -5px 5px rgb(166, 165, 165);
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+}
+
+.inner-section {
+  padding-left: 200px;
+  padding-top: 40px;
+  padding-right: 20px;
+}
+
+button {
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid lightgray;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 5px;
+}
