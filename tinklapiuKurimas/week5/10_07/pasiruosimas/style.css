@@ -1,134 +1,120 @@
 :root {
-  /* primary colors */
-  --primary-dark-blue: hsl(243, 87%, 12%);
-  --primary-desaturated-blue: hsl(238, 22%, 44%);
-
-  /* accent colors */
-  --accent-blue: hsl(224, 93%, 58%);
-  --accent-cyan: hsl(170, 45%, 43%);
-
-  /* neutral colors */
-  --neutral-blue: hsl(240, 75%, 98%);
-  --neutral-gray: hsl(0, 0%, 75%);
+  --button-color: blue;
+  --nav-color: darkblue;
+  --primary-color: white;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-}
-
-/* font family */
-
-h1,
-header {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Oepn Sans, Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-/* Header styling */
+/* header styling */
 
-header,
-.all-your-files {
-  padding: 10px;
-  margin-bottom: 50px;
-}
-
-nav figure {
-  width: 150px;
-}
-
-nav {
+header nav {
+  background-color: var(--nav-color);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+  & a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
 }
 
-.nav-links a {
-  padding-left: 13px;
-  text-decoration: none;
-  color: var(--primary-dark-blue);
+header nav ul a {
+  color: gray;
 }
 
-/* Main styling */
-
-/* All your files section */
-
-.all-your-files {
-  display: grid;
-  grid-template-columns: 100%;
+header nav ul a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
-.section-one-info {
+header ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+}
+
+.hero {
+  background-image: url(https://framerusercontent.com/images/XB51LRYPmyKAo8GzGxZERu9xk.jpeg?scale-down-to=1024&width=2560&height=1440);
   text-align: center;
-  flex-wrap: wrap;
-  gap: 35px;
-  padding: 20px;
-  margin-bottom: 50px;
 }
 
-.all-your-files figure img {
-  width: 90%;
+.hero h1 {
+  margin-top: 0;
+  color: var(--primary-color);
+  padding-top: 60px;
 }
 
-.section-one-info h1 {
-  font-size: 25px;
-  line-height: 35px;
+.hero p {
+  color: var(--primary-color);
 }
 
-.section-one-info p {
-  line-height: 25px;
-}
-
-.section-one-info form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-input,
-button {
-  width: 320px;
-  padding: 12px;
-}
-
-button {
-  background-color: var(--accent-blue);
+.button-one,
+.button-two {
+  color: var(--primary-color);
+  padding: 10px 15px;
   border-radius: 5px;
-  border: none;
-  color: white;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-/* Stay productive section */
+.button-one {
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+}
 
-/* Desktop styling */
+.button-two {
+  background: none;
+  border: 2px solid var(--primary-color);
+}
 
-@media screen and (min-width: 376px) {
-  /* header styling */
-  header {
-    padding: 40px;
-  }
+/* Section one */
 
-  /* Section all your files */
-  .all-your-files {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
+.section-one {
+  padding: 40px 40px 20px 40px;
+  display: flex;
+  gap: 30px;
+}
 
-  .all-your-files figure {
-    order: 2;
-  }
+.featured-title {
+    width: 250px;
+}
 
-  button {
-    width: 150px;
-  }
+.icon-box {
+  background-color: var(--button-color);
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+}
 
-  .section-one-info {
-    text-align: left;
-  }
+.icon-box i {
+  color: var(--primary-color);
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+
+/* Plans section */
+
+.plans {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.plans h1 {
+    padding-top: 40px;
+}
+
+.card {
+    background-color: var(--primary-color);
 }
