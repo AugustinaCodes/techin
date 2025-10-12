@@ -1,0 +1,147 @@
+:root {
+  /* primary */
+  --primary-color-one: hsl(243, 87%, 12%);
+  --primary-color-two: hsl(238, 22%, 44%);
+
+  /* accent */
+  --accent-color-one: hsl(224, 93%, 58%);
+  --accent-color-two: hsl(170, 45%, 43%);
+
+  /* neutral */
+  --neutral-color-one: hsl(240, 75%, 98%);
+  --neutral-color-two: hsl(0, 0%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* header styling */
+
+h1,
+header {
+  font-family: RalewayArial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  padding-left: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  color: var(--primary-color-one);
+  & a {
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+}
+
+/* hero section */
+
+.hero {
+  padding: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  color: var(--primary-color-one);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  line-height: 1.5rem;
+  color: var(--primary-color-one);
+  margin-bottom: 40px;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+.hero-text form input,
+button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+.hero-text form input {
+  border: 1px solid var(--primary-color-one);
+}
+
+.hero-text form button {
+  border: 1px solid var(--accent-color-one);
+  background-color: var(--accent-color-one);
+  color: var(--neutral-color-one);
+  font-weight: 400;
+}
+
+/* say productive section */
+
+.stay-productive {
+  background-color: var(--neutral-color-one);
+}
+
+.stay-productive figure img:nth-of-type(2) {
+  display: none;
+}
+
+@media screen and (min-width: 376px) {
+  /* header */
+  nav ul {
+    gap: 20px;
+  }
+
+  header {
+    padding: 40px;
+  }
+
+  /* hero section */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .hero-image {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-text form {
+    display: flex;
+    gap: 20px;
+    & button {
+      width: 40%;
+    }
+  }
+}
