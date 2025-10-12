@@ -84,10 +84,15 @@ header ul {
   padding: 40px 40px 20px 40px;
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .featured-title {
-    width: 250px;
+  width: 250px;
+}
+
+.featured-title p {
+  text-align: left;
 }
 
 .icon-box {
@@ -107,14 +112,172 @@ header ul {
 /* Plans section */
 
 .plans {
-    background-color: lightgray;
-    text-align: center;
+  background-color: lightgray;
+}
+
+.plans h1,
+p {
+  text-align: center;
 }
 
 .plans h1 {
-    padding-top: 40px;
+  padding-top: 40px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .card {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  width: 300px;
+  padding: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.card ul {
+  padding-left: 0;
+}
+
+.card ul li {
+  list-style-type: none;
+  line-height: 35px;
+}
+
+.card ul li::before {
+  content: "✓";
+  color: var(--button-color);
+  padding-right: 5px;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: gray;
+}
+
+.card p {
+  text-align: left;
+  color: gray;
+}
+
+.card p span {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.card button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--button-color);
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.card:nth-of-type(1) button {
+  color: var(--button-color);
+  background: none;
+}
+
+.card:nth-of-type(2) button {
+  color: var(--primary-color);
+  background: var(--button-color);
+}
+
+/* customer testimonials section */
+
+.customer-testimonials {
+  text-align: center;
+}
+
+.customer-testimonials p {
+  color: lightgray;
+}
+
+.testimonials-quote {
+  border: 1px solid lightgray;
+  width: 500px;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-quote-text {
+  padding-left: 20px;
+}
+
+.testimonial-quote-text p {
+  text-align: left;
+}
+
+.testimonial-quote-text p:first-of-type {
+  color: black;
+}
+
+.fa-quote-right {
+  background-color: var(--button-color);
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+/* get in touch section */
+
+.get-in-touch {
+  background-color: lightgray;
+  text-align: center;
+  padding: 40px;
+}
+
+.get-in-touch form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.get-in-touch form input,
+form textarea {
+  padding: 20px;
+  border: 1px solid rgb(176, 176, 176);
+}
+
+.get-in-touch form button {
+  padding: 15px;
+  background-color: var(--button-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.fa-envelope {
+  background-color: var(--button-color);
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--nav-color);
+  color: var(--primary-color);
+  padding: 40px;
+}
+
+footer p {
+  margin: 0;
 }
