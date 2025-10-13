@@ -42,9 +42,6 @@ header nav a {
 
 /* section hero styling */
 
-.hero {
-}
-
 .hero-text {
   padding: 0 20px;
 }
@@ -92,4 +89,63 @@ header nav a {
 .hero img {
   width: 140%;
   margin-left: -100px;
+}
+
+/* main - projects section */
+
+.projects-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section h1 {
+    font-family: Playfair Display, Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.line {
+    width: 65px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+.project-card {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.project-card-text {
+    padding: 80px 30px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.project-card h1 {
+    padding-bottom: 20px;
+}
+
+.project-card p {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: rgb(117, 117, 117);
+    line-height: 25px;
+}
+
+.project-card-text button {
+    padding: 7px 15px;
+    border-radius: 15px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    border: 2px solid var(--text-color);
+    margin-top: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 19px;
 }
