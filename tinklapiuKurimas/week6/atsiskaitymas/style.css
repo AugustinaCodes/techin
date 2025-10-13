@@ -41,8 +41,9 @@ header nav ul li a:hover {
   color: var(--primary-color);
 }
 
-a:link, a:visited {
-    color: var(--text-color);
+a:link,
+a:visited {
+  color: var(--text-color);
 }
 
 header nav a {
@@ -89,8 +90,8 @@ header nav a {
 }
 
 .button-one:hover {
-    background: var(--primary-color);
-    cursor: pointer;
+  background: var(--primary-color);
+  cursor: pointer;
 }
 
 .button-two {
@@ -103,9 +104,9 @@ header nav a {
 }
 
 .button-two:hover {
-    background: var(--main-color);
-    cursor: pointer;
-    color: var(--primary-color);
+  background: var(--main-color);
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
 .hero img {
@@ -143,7 +144,10 @@ header nav a {
 }
 
 .project-card-text {
-  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
   background-color: var(--primary-color);
   border-radius: 10px;
   flex: 1;
@@ -160,6 +164,7 @@ header nav a {
 }
 
 .project-card-text button {
+  width: 120px;
   padding: 7px 15px;
   border-radius: 15px;
   background: var(--primary-color);
@@ -170,16 +175,16 @@ header nav a {
 }
 
 .project-card-text button:hover {
-    background: var(--main-color);
-    color: var(--primary-color);
-    cursor: pointer;
+  background: var(--main-color);
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 .card-image {
   flex: 1;
 }
 
-.project-card img {
+.card-image img {
   width: 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -223,8 +228,8 @@ header nav a {
 }
 
 .contact-us-section button:hover {
-    background: var(--primary-color);
-    cursor: pointer;
+  background: var(--primary-color);
+  cursor: pointer;
 }
 
 /* footer section */
@@ -235,7 +240,7 @@ header nav a {
 }
 
 .social-media-links a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 footer {
