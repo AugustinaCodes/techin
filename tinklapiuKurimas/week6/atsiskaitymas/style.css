@@ -110,7 +110,7 @@ header nav a {
 
 .hero img {
   width: 140%;
-  margin-left: -100px;
+  margin-left: -145px;
 }
 
 /* main - projects section */
@@ -279,8 +279,12 @@ footer img {
     display: flex;
   }
 
+  .hero-text {
+    padding-right: 140px;
+  }
+
   .hero img {
-    width: 450px;
+    width: 420px;
     height: 350px;
     position: relative;
     top: -90px;
