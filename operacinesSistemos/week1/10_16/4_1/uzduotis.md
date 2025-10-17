@@ -95,3 +95,40 @@ timeout 15s firefox
 
 13. Užblokuokite savo naudotojui galimybę paleisti tam tikrą programą/komandą
 
+- make sure the user exits (the one you want to block access to)
+- add a group (the one you want to apply the restrictions to):
+
+```
+sudo groupadd groupname
+```
+
+- add user to the group:
+```
+sudo usermod -aG groupname username
+```
+
+a - append (don't remove from other groups);
+G - specify groups
+
+- make sure you're running commands as the root/main user
+- limit program access:
+
+```
+sudo setfacl -m g:groupname:0 /usr/bin/firefox
+```
+
+setfacl - set file access control list (ACLs); m - modify; g - target group; 0 - no permissions at all
+
+![Answer Thirteen](./images/answer13.png)
+
+- to block a command:
+- easy way to see which path it belongs:
+```
+which command
+```
+- then the same command applies:
+```
+sudo setfacl -m g:restrict:0 /usr/bin/pstree
+```
+
+![Answer Thirteen-One](./images/answer13-1.png)
