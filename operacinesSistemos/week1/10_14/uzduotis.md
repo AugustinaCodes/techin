@@ -55,6 +55,12 @@ mv ff4.txt filef4.txt
 mv f*.txt ~/Bandymas
 ```
 
+or to move all of the files inside Bandymas (because without * it will move the WHOLE folder)(ex from Home directory):
+
+```
+mv Bandymas/* Tikslas/
+```
+
 ![Answer Eight](./images/answer8.png)
 
 9.  Nukopijuokite failą passwd iš katalogo /etc į katalogą Bandymas. 
