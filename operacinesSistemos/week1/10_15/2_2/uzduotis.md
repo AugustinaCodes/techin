@@ -14,6 +14,12 @@ mkdir Teises
 touch right1.txt right2.txt right3.txt
 ```
 
+or
+
+```
+touch right{1..3}.txt
+```
+
 ![Answer Two](./images/answer2.png)
 
 3. Pažiūrėkite katalogo Teises ir sukurtų failų prieigos teises. 
