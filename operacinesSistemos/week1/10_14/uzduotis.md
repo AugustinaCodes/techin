@@ -14,6 +14,12 @@ mkdir Bandymas
 touch f1.txt f2.txt f3.txt f4.txt ff1.txt ff2.txt ff3.txt ff4.txt
 ```
 
+or
+
+```
+touch f{1..4}.txt ff{1..4}.txt
+```
+
 3. Pažiūrėkite katalogo Bandymas turinį. 
 
 ![Answer Two, Three](./images/answer2-3.png)
