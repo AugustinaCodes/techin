@@ -85,6 +85,12 @@ cat passwd
 grep root passwd
 ```
 
+or it's better to write with " " as it will also include spaces. Example:
+
+```
+grep "root user" passwd
+```
+
 ![Answer Eleven](./images/answer11.png)
 
 12.  Suskaičiuokite kiek yra simbolių faile passwd.  
@@ -140,6 +146,12 @@ cp fstab ~/Tikslas
 wc -c fstab
 ```
 
+or (du tells how much disk space the file occupies, not the actual size)
+
+```
+du -b fstab
+```
+
 ![Answer Nineteen](./images/answer19.png)  
 
 20.  Kataloge Bandymas sukurkite failą sorting.txt su tokiomis eilutėmis: apples, oranges, pears, kiwis, bananas. 
@@ -151,6 +163,26 @@ nano sorting.txt
 ctrl + O to save, Enter, ctrl + X to exit
 
 ![Answer Twenty](./images/answer20.png) 
+
+or you can use `echo` command, (but it will write one line at a time):
+
+```
+echo "apples" >> sorting.txt
+echo "oranges" >> sorting.txt
+echo "pears" >> sorting.txt
+echo "kiwis" >> sorting.txt
+echo "bananas" >> sorting.txt
+```
+
+also, > overwrites and >> appends (adds to the file).
+
+or
+
+```
+cat >> sorting.txt
+```
+
+then write all the text in ther terminal and close it with control + C
 
 21.  Surūšiuokite failo sorting.txt turinį (eilutes) pagal abėcėlę ir rezultatą išveskite į ekraną. 
     
@@ -167,3 +199,10 @@ find ~/ -name ff2.txt
 ```
 
 ![Answer Twenty Two](./images/answer22.png) 
+
+or, for all of the permission denied to disappear
+
+```
+find / -name "ff2.txt" 2> /dev/null
+find / -name "*.txt" 2> /dev/null
+```
