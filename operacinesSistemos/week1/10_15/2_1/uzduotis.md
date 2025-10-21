@@ -24,6 +24,12 @@ sudo gpasswd -a pingvinas sudo
 
 ![Answer Three](./images/answer3.png)
 
+or
+
+```
+sudo usermod -aG sudo pingvinas
+```
+
 4. Sukurkite naują vartotojų grupę aliaska. 
 
 ```
@@ -54,10 +60,22 @@ groups
 
 ![Answer Seven](./images/answer7.png)
 
+or 
+
+```
+groups pingvinas
+```
+
+or
+
+```
+id pingvinas
+```
+
 8. Pašalinkite vartotoją pingvinas iš Linux OS (kartu su vartotojo namų katalogu ir visa kita vartotojo informacija).
 
 ```
-sudo userdel -r pingvinas
+sudo userdel -fr pingvinas
 ```
 
 ![Answer Eight](./images/answer8.png)

@@ -51,6 +51,8 @@ ps aux | grep firefox
 pkill firefox
 ```
 
+or control + Z stops and control + C closes the program
+
 8. Išbandykite komandą (programą) top.
 
 ```
@@ -62,6 +64,12 @@ top
 9. top programos pagalba patikrinkite kokia programa (procesas) naudoja daugiausiai atminties (RAM).
 
 ![Answer Nine](./images/answer9.png)
+
+or
+
+```
+top -o %MEM
+```
 
 10. Suraskite, kiek procesų šiuo metu priklauso jūsų vartotojui.
 

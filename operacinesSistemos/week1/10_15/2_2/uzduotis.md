@@ -78,6 +78,12 @@ sudo chown root right2.txt
 
 ![Answer Eleven](./images/answer11.png)
 
+or to change owner and group:
+
+```
+sudo chown root:root right2.txt
+```
+
 12.  Ištrinkite (kaip paprastas vartotojas) failą TeisesCP/right2.txt.
 
 ```
