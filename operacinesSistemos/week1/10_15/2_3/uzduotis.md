@@ -11,15 +11,11 @@ sudo passwd AB
 
 2. Patikrinkite, ar vartotojas VP buvo sukurtas. 
 
+```
+cat /etc/passwd
+```
+
 ![Answer Two](./images/answer2.png)
-
-or
-
-```
-cat /etc/ passwd
-```
-
-![Answer Two-One](./images/answer2-1.png)
 
 3. Atimkite iš vartotojo VP teises peržiūrėti vaizdo įrašus. Pažiūrėkite, kokioms grupėms priklauso VP. 
 
@@ -50,6 +46,7 @@ su AB
 6. Patikrinkite, kas prisijungęs prie sistemos ir koks vartotojas dabar dirba su terminalo langu. 
 
 ```
+who
 whoami
 ```
 
@@ -58,7 +55,7 @@ whoami
 7. Savo namų kataloge sukurkite failus a ir b. Sukurkite katalogus A ir B. 
 
 ```
-touch a.txt b.txt
+touch a b
 mkdir A B
 ```
 
@@ -83,11 +80,25 @@ rm -r *
 
 10. Nukopijuokite failus /etc/timezone ir /etc/sudoers su jų originaliomis teisėmis ir savininkais į savo namų katalogą. 
 
+```
+sudo cp --preserve=mode,ownership /etc/timezone /home/AB/
+sudo cp --preserve=mode,ownership /etc/sudoers /home/AB/
+```
 
+![Answer Ten](./images/answer10.png)
 
-Vartotojo student namų kataloge sukurkite katalogą foreign. Pakeiskite jo šeimininką ir grupę į student. 
+11. Vartotojo student namų kataloge sukurkite katalogą foreign. Pakeiskite jo šeimininką ir grupę į student. 
 
-Pakeiskite sukurto katalogo foreign teises taip, kad visi sistemoje galėtų į jį įeiti, tačiau niekas negalėtų įrašyti. 
+```
+sudo mkdir /home/student/foreign
+sudo chown student:student /home/student/foreign
+```
+
+12. Pakeiskite sukurto katalogo foreign teises taip, kad visi sistemoje galėtų į jį įeiti, tačiau niekas negalėtų įrašyti. 
+
+```
+
+```
 
 Savo namų kataloge sukurkite katalogo foreign nuorodą. 
 
