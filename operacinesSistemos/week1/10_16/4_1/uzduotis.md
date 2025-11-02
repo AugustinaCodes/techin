@@ -2,14 +2,14 @@
 
 1. Išveskite į ekraną visus OS procesus. 
 
-```
+```bash
 ps aux
 ```
 ![Answer One](./images/answer1.png)
 
 2. Visų procesų sąrašą išsaugokite faile procesai.txt (vieta: ~).
 
-```
+```bash
 ps aux > procesai.txt
 ```
 
@@ -17,21 +17,21 @@ ps aux > procesai.txt
 
 3. Išveskite į ekraną visus vartotojo root procesus.
 
-```
+```bash
 ps aux | grep root
 ```
 ![Answer Three](./images/answer3.png)
 
 4. Išbandykite komandą pstree.
 
-```
+```bash
 pstree
 ```
 ![Answer Four](./images/answer4.png)
 
 5. Paleiskite Firefox interneto naršyklę (leisti iš komandinės eilutės).
 
-```
+```bash
 firefox
 ```
 
@@ -39,7 +39,7 @@ firefox
 
 6. Suraskite paleistą Firefox programą procesų sąraše.
 
-```
+```bash
 ps aux | grep firefox
 ```
 
@@ -47,7 +47,7 @@ ps aux | grep firefox
 
 7. Uždarykite Firefox programą iš komandinės eilutės.
 
-```
+```bash
 pkill firefox
 ```
 
@@ -55,7 +55,7 @@ or control + Z stops and control + C closes the program
 
 8. Išbandykite komandą (programą) top.
 
-```
+```bash
 top
 ```
 
@@ -67,13 +67,13 @@ top
 
 or
 
-```
+```bash
 top -o %MEM
 ```
 
 10. Suraskite, kiek procesų šiuo metu priklauso jūsų vartotojui.
 
-```
+```bash
 top -u student
 ```
 
@@ -81,13 +81,13 @@ top -u student
 
 11. Išfiltruokite visus „zombie“ tipo procesus.
 
-```
+```bash
 ps aux | grep 'defunct'
 ```
 
 or
 
-```
+```bash
 ps aux | grep 'z'
 ```
 
@@ -95,7 +95,7 @@ ps aux | grep 'z'
 
 12. Paleiskite bet kokią programą taip, kad ji automatiškai būtų nutraukta po 15 sekundžių.
 
-```
+```bash
 timeout 15s firefox
 ```
 
@@ -106,12 +106,12 @@ timeout 15s firefox
 - make sure the user exits (the one you want to block access to)
 - add a group (the one you want to apply the restrictions to):
 
-```
+```bash
 sudo groupadd groupname
 ```
 
 - add user to the group:
-```
+```bash
 sudo usermod -aG groupname username
 ```
 
@@ -121,7 +121,7 @@ G - specify groups
 - make sure you're running commands as the root/main user
 - limit program access:
 
-```
+```bash
 sudo setfacl -m g:groupname:0 /usr/bin/firefox
 ```
 
@@ -131,11 +131,11 @@ setfacl - set file access control list (ACLs); m - modify; g - target group; 0 -
 
 - to block a command:
 - easy way to see which path it belongs:
-```
+```bash
 which command
 ```
 - then the same command applies:
-```
+```bash
 sudo setfacl -m g:restrict:0 /usr/bin/pstree
 ```
 
