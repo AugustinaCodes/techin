@@ -2,7 +2,7 @@
 
 1. Savo namų kataloge sukurkite katalogą Bandymas.
 
-```
+```bash
 mkdir Bandymas
 ```
 
@@ -10,13 +10,13 @@ mkdir Bandymas
 
 2. Kataloge Bandymas sukurkite failus: f1.txt, f2.txt, f3.txt, f4.txt, ff1.txt, ff2.txt, ff3.txt, ff4.txt. 
 
-```
+```bash
 touch f1.txt f2.txt f3.txt f4.txt ff1.txt ff2.txt ff3.txt ff4.txt
 ```
 
 or
 
-```
+```bash
 touch f{1..4}.txt ff{1..4}.txt
 ```
 
@@ -30,7 +30,7 @@ touch f{1..4}.txt ff{1..4}.txt
 
 5. Nukopijuokite katalogo Bandymas failus f1.txt, f3.txt, ff2.txt, ff4.txt į katalogą Tikslas. 
 
-```
+```bash
 cp f1.txt f3.txt ff2.txt ff4.txt ~/Tikslas/
 ```
 
@@ -40,7 +40,7 @@ cp f1.txt f3.txt ff2.txt ff4.txt ~/Tikslas/
 
 7. Katalogo Tikslas failų vardus pakeiskite iš f*.txt į file*.txt. 
 
-```
+```bash
 mv f1.txt file1.txt
 mv f3.txt file3.txt
 mv ff2.txt filef2.txt
@@ -51,13 +51,13 @@ mv ff4.txt filef4.txt
 
 8. Perkelkite pervadintus failus į katalogą Bandymas.
 
-```
+```bash
 mv f*.txt ~/Bandymas
 ```
 
 or to move all of the files inside Bandymas (because without * it will move the WHOLE folder)(ex from Home directory):
 
-```
+```bash
 mv Bandymas/* Tikslas/
 ```
 
@@ -65,7 +65,7 @@ mv Bandymas/* Tikslas/
 
 9.  Nukopijuokite failą passwd iš katalogo /etc į katalogą Bandymas. 
 
-```
+```bash
 cp passwd ~/Bandymas/
 ```
 
@@ -73,7 +73,7 @@ cp passwd ~/Bandymas/
 
 10. Išveskite failo passwd turinį į ekraną. 
 
-```
+```bash
 cat passwd
 ```
 
@@ -81,13 +81,13 @@ cat passwd
 
 11.  Suraskite faile passwd žodį root. Rezultatą išveskite į ekraną. 
 
-```
+```bash
 grep root passwd
 ```
 
 or it's better to write with " " as it will also include spaces. Example:
 
-```
+```bash
 grep "root user" passwd
 ```
 
@@ -95,7 +95,7 @@ grep "root user" passwd
 
 12.  Suskaičiuokite kiek yra simbolių faile passwd.  
 
-```
+```bash
 wc -m passwd
 ```
 
@@ -103,7 +103,7 @@ wc -m passwd
     
 13.  Išveskite į ekraną failo passwd 5 pirmas ir paskutines failo eilutes. 
 
-```
+```bash
 head -n 5 passwd
 tail -n 5 passwd
 ```
@@ -112,7 +112,7 @@ tail -n 5 passwd
 
 14.  Kataloge Tikslas sukurkite failo passwd simbolinę nuorodą. 
 
-```
+```bash
 ln -s passwd ~/Tikslas
 ```
 
@@ -122,7 +122,7 @@ ln -s passwd ~/Tikslas
 
 16.   Kataloge Bandymas ištrinkite failą passwd. 
     
-```
+```bash
 rm passwd
 ```
 
@@ -134,7 +134,7 @@ rm passwd
 
 18.  Nukopijuokite failą fstab iš katalogo /etc į katalogą Tikslas. 
 
-```
+```bash
 cp fstab ~/Tikslas
 ```
 
@@ -142,13 +142,13 @@ cp fstab ~/Tikslas
 
 19.  Patikrinkite koks yra failo fstab dydis (baitais). 
     
-```
+```bash
 wc -c fstab
 ```
 
 or (du tells how much disk space the file occupies, not the actual size)
 
-```
+```bash
 du -b fstab
 ```
 
@@ -156,7 +156,7 @@ du -b fstab
 
 20.  Kataloge Bandymas sukurkite failą sorting.txt su tokiomis eilutėmis: apples, oranges, pears, kiwis, bananas. 
     
-```
+```bash
 nano sorting.txt
 ```
 
@@ -166,7 +166,7 @@ ctrl + O to save, Enter, ctrl + X to exit
 
 or you can use `echo` command, (but it will write one line at a time):
 
-```
+```bash
 echo "apples" >> sorting.txt
 echo "oranges" >> sorting.txt
 echo "pears" >> sorting.txt
@@ -178,7 +178,7 @@ also, > overwrites and >> appends (adds to the file).
 
 or
 
-```
+```bash
 cat >> sorting.txt
 ```
 
@@ -186,7 +186,7 @@ then write all the text in ther terminal and close it with control + C
 
 21.  Surūšiuokite failo sorting.txt turinį (eilutes) pagal abėcėlę ir rezultatą išveskite į ekraną. 
     
-```
+```bash
 sort sorting.txt
 ```
 
@@ -194,7 +194,7 @@ sort sorting.txt
 
 22.  Raskite, kur Jūsų failų sistemoje yra failas ff2.txt
 
-```
+```bash
 find ~/ -name ff2.txt
 ```
 
@@ -202,7 +202,7 @@ find ~/ -name ff2.txt
 
 or, for all of the permission denied to disappear
 
-```
+```bash
 find / -name "ff2.txt" 2> /dev/null
 find / -name "*.txt" 2> /dev/null
 ```

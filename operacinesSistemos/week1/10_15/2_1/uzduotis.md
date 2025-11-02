@@ -2,7 +2,7 @@
 
 1. Sukurkite naują Linux OS vartotoją vardu pingvinas (suteikite jam namų katalogą vardu madagaskaras, priskirkite namų grupę users ir papildomas grupes lp,video,audio,cdrom bei nustatykite vartotojo shell apvalkalą bash). 
 
-```
+```bash
 sudo useradd -m -d /home/madagaskaras -g users -G lp,video,audio,cdrom -s /bin/bash pingvinas
 ```
 
@@ -10,7 +10,7 @@ sudo useradd -m -d /home/madagaskaras -g users -G lp,video,audio,cdrom -s /bin/b
 
 2. Suteikite vartotojui slaptažodį pingo. 
 
-```
+```bash
 sudo passwd pingvinas
 ```
 
@@ -18,7 +18,7 @@ sudo passwd pingvinas
 
 3. Pridėkite sukurtą vartotoją prie administravimo grupės – sudo. 
 
-```
+```bash
 sudo gpasswd -a pingvinas sudo
 ```
 
@@ -26,19 +26,19 @@ sudo gpasswd -a pingvinas sudo
 
 or
 
-```
+```bash
 sudo usermod -aG sudo pingvinas
 ```
 
 4. Sukurkite naują vartotojų grupę aliaska. 
 
-```
+```bash
 sudo groupadd aliaska
 ```
 
 5. Pridėkite vartotoją pingvinas prie grupės aliaska. 
 
-```
+```bash
 sudo gpasswd -a pingvinas aliaska
 ```
 
@@ -46,7 +46,7 @@ sudo gpasswd -a pingvinas aliaska
 
 6. Prisijunkite prie Linux OS vartotojo pingvinas vardu. 
 
-```
+```bash
 su pingvinas
 ```
 
@@ -54,7 +54,7 @@ su pingvinas
 
 7. Patikrinkite kokioms grupės priklauso sukurtas vartotojas pingvinas. 
 
-```
+```bash
 groups
 ```
 
@@ -62,19 +62,19 @@ groups
 
 or 
 
-```
+```bash
 groups pingvinas
 ```
 
 or
 
-```
+```bash
 id pingvinas
 ```
 
 8. Pašalinkite vartotoją pingvinas iš Linux OS (kartu su vartotojo namų katalogu ir visa kita vartotojo informacija).
 
-```
+```bash
 sudo userdel -fr pingvinas
 ```
 

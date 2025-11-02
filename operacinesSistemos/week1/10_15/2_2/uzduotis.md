@@ -2,7 +2,7 @@
 
 1. Savo namų kataloge sukurkite katalogą Teises. 
 
-```
+```bash
 mkdir Teises
 ```
 
@@ -10,13 +10,13 @@ mkdir Teises
 
 2. Kataloge Teises sukurkite failus: right1.txt, right2.txt, right3.txt. 
 
-```
+```bash
 touch right1.txt right2.txt right3.txt
 ```
 
 or
 
-```
+```bash
 touch right{1..3}.txt
 ```
 
@@ -24,7 +24,7 @@ touch right{1..3}.txt
 
 3. Pažiūrėkite katalogo Teises ir sukurtų failų prieigos teises. 
 
-```
+```bash
 ls -la
 ```
 
@@ -33,7 +33,7 @@ ls -la
 
 4. Pakeiskite katalogo Teises grupę į root grupę. 
 
-```
+```bash
 sudo chown student:root ~/Teises
 ```
 
@@ -44,7 +44,7 @@ sudo chown student:root ~/Teises
 
 6. Sukurkite namų kataloge naują katalogą TeisesCP. 
 
-```
+```bash
 mkdir TeisesCP
 ```
 
@@ -52,7 +52,7 @@ mkdir TeisesCP
 
 7. Nukopijuokite iš katalogo Teises failą right2.txt į katalogą TeisesCP. 
 
-```
+```bash
 cp right2.txt ~/TeisesCP
 ```
 
@@ -62,7 +62,7 @@ cp right2.txt ~/TeisesCP
 
 9.  Pakeiskite failo TeisesCP/right2.txt prieigos teises į 644. 
 
-```
+```bash
 chmod 644 right2.txt
 ```
 
@@ -72,7 +72,7 @@ chmod 644 right2.txt
 
 11.  Pakeiskite failo TeisesCP/right2.txt šeimininką į root. 
 
-```
+```bash
 sudo chown root right2.txt
 ```
 
@@ -80,13 +80,13 @@ sudo chown root right2.txt
 
 or to change owner and group:
 
-```
+```bash
 sudo chown root:root right2.txt
 ```
 
 12.  Ištrinkite (kaip paprastas vartotojas) failą TeisesCP/right2.txt.
 
-```
+```bash
 rm right2.txt
 ```
 
