@@ -107,3 +107,28 @@ network:
 # Then apply changes with:
 sudo netplan apply
 ```
+
+When the interface is down, bring it up:
+
+```bash
+sudo ip link set enp0s8 up
+```
+
+When the config is correct but the connection is not working, do this:
+
+```bash
+# Stop NetworkManager
+sudo systemctl stop NetworkManager
+
+# Delete any leases that might be causing issues
+sudo rm /var/lib/NetworkManager/NetworkManager-intern.conf
+
+# Restart NetworkManager
+sudo systemctl start NetworkManager
+
+# Apply netplan again
+sudo netplan apply
+
+# to check if connection is working:
+ping 8.8.8.8
+```
