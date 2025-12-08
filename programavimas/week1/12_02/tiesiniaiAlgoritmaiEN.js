@@ -54,10 +54,10 @@ console.log(`${c} * ${d} = ${sum2}`);
 // exercise 8:
 console.log("--------EXERCISE 8--------");
 
-let firstNumber = prompt("Type a number:")
-let secondNumber = prompt("Type another number:")
+let firstNumber = +prompt("Type a number:")
+let secondNumber = +prompt("Type another number:")
 
-let sum3 = parseInt(firstNumber) + parseInt(secondNumber);
+let sum3 = firstNumber + secondNumber;
 
 console.log(`Sum of the numbers: ${sum3}`)
 
