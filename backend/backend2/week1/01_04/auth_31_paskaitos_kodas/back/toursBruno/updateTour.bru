@@ -1,0 +1,22 @@
+meta {
+  name: updateTour
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/api/v1/tours/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "difficulty": "hard",
+    "price": "150.00"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

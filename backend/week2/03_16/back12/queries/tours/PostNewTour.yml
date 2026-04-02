@@ -1,0 +1,28 @@
+info:
+  name: PostNewTour
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/tours
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Test tour2",
+        "duration": 100,
+        "maxGroupSize": 20,
+        "difficulty": "medium",
+        "ratingsAverage": 4.5,
+        "ratingsQuantity": 105,
+        "price": 600,
+        "script": "shfjvbkev "
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
