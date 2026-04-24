@@ -1,18 +1,18 @@
 {
   "requests": [
     {
-      "id": 1,
-      "employeeName": "John Smith",
-      "department": "Engineering",
-      "leaveType": "Vacation",
+      "id": "1",
+      "employeeName": "John Smiths",
+      "department": "Engineerings",
+      "leaveType": "Remote Work",
       "startDate": "2026-05-10",
       "endDate": "2026-05-15",
       "reason": "Family vacation trip",
-      "status": "Pending",
+      "status": "Approved",
       "createdAt": "2026-04-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "employeeName": "Emma Johnson",
       "department": "Marketing",
       "leaveType": "Sick Leave",
@@ -23,7 +23,7 @@
       "createdAt": "2026-04-18"
     },
     {
-      "id": 3,
+      "id": "3",
       "employeeName": "Michael Brown",
       "department": "Sales",
       "leaveType": "Remote Work",
@@ -34,7 +34,7 @@
       "createdAt": "2026-04-10"
     },
     {
-      "id": 4,
+      "id": "4",
       "employeeName": "Sophia Davis",
       "department": "HR",
       "leaveType": "Unpaid Leave",
@@ -43,6 +43,18 @@
       "reason": "Personal matters requiring time off",
       "status": "Rejected",
       "createdAt": "2026-04-05"
+    },
+    {
+      "employeeName": "Test Test",
+      "department": "Test",
+      "leaveType": "Sick Leave",
+      "startDate": "2026-04-25",
+      "endDate": "2026-04-30",
+      "reason": "Test test test",
+      "status": "Pending",
+      "createdAt": "2026-04-24",
+      "id": "pErp3xgou0Q"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
