@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.card {
+  @apply text-white m-5;
+}
+
+.error {
+  @apply text-red-800;
+}
+
+.active {
+  @apply bg-amber-800 text-white;
+}

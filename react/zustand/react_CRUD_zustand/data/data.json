@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": "a7cb",
+      "username": "John",
+      "email": "john@gmail.com",
+      "channel": "Code with Ania Kubow",
+      "color": "red",
+      "hobbies": [
+        "Traveling",
+        "Cooking"
+      ],
+      "likes": 7
+    },
+    {
+      "id": "b3f1",
+      "username": "Emma",
+      "email": "emma@gmail.com",
+      "channel": "Frontend Masters",
+      "color": "blue",
+      "hobbies": [
+        "Photography",
+        "Hiking"
+      ],
+      "likes": 12
+    },
+    {
+      "id": "c9d4",
+      "username": "Liam",
+      "email": "liam@gmail.com",
+      "channel": "JavaScript Simplified",
+      "color": "green",
+      "hobbies": [
+        "Gaming",
+        "Reading"
+      ],
+      "likes": 5
+    },
+    {
+      "id": "4dd9",
+      "username": "Test1",
+      "email": "test1@gmail.com",
+      "channel": "Kevin Powell",
+      "color": "blue",
+      "hobbies": [
+        "Traveling",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "b53f",
+      "username": "Test2",
+      "email": "test2@gmail.com",
+      "channel": "Kevin Powell",
+      "color": "green",
+      "hobbies": [
+        "Reading",
+        "Traveling",
+        "Cooking"
+      ]
+    }
+  ]
+}

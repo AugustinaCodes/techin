@@ -1,0 +1,48 @@
+{
+  "requests": [
+    {
+      "id": 1,
+      "employeeName": "John Smith",
+      "department": "Engineering",
+      "leaveType": "Vacation",
+      "startDate": "2026-05-10",
+      "endDate": "2026-05-15",
+      "reason": "Family vacation trip",
+      "status": "Pending",
+      "createdAt": "2026-04-01"
+    },
+    {
+      "id": 2,
+      "employeeName": "Emma Johnson",
+      "department": "Marketing",
+      "leaveType": "Sick Leave",
+      "startDate": "2026-04-20",
+      "endDate": "2026-04-22",
+      "reason": "Flu recovery period",
+      "status": "Approved",
+      "createdAt": "2026-04-18"
+    },
+    {
+      "id": 3,
+      "employeeName": "Michael Brown",
+      "department": "Sales",
+      "leaveType": "Remote Work",
+      "startDate": "2026-04-25",
+      "endDate": "2026-04-30",
+      "reason": "Working remotely from another city",
+      "status": "Pending",
+      "createdAt": "2026-04-10"
+    },
+    {
+      "id": 4,
+      "employeeName": "Sophia Davis",
+      "department": "HR",
+      "leaveType": "Unpaid Leave",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-10",
+      "reason": "Personal matters requiring time off",
+      "status": "Rejected",
+      "createdAt": "2026-04-05"
+    }
+  ]
+}
